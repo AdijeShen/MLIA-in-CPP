@@ -7,5 +7,5 @@ using namespace std;
 
 int main()
 {
-	test_of_kNN1();
+	test_of_minist();
 }

@@ -30,3 +30,21 @@ k-近邻算法
 5. 测试：计算错误率。
 6. 使用：这个应用程序需要输入一些数据并输出结构化的数值。接下来，应用程序在这个输入数据上运行kNN算法，并确定输入数据应该属于哪个类别。然后，该应用程序对计算出的类采取一些行动。
 
+### 伪代码
+
+输入为一条数据inX，以及一个数据集dataset，输出为推测inX的分类（label/class）
+
+For every point in our dataset:
+	calculate the distance between inX and the current point
+	sort the distances in increasing order
+	take k items with lowest distances to inX
+	find the majority class among these items
+	return the majority class as our prediction for the class of inX
+
+对于数据集中的每一个点：
+	计算inX和当前点之间的距离
+	按照递增的顺序对距离进行排序
+	取出与inX距离最小的k个条目
+	在k个条目中找出数量最多的分类
+	将数量最多的分类作为我们对inX类别的预测返回。
+
